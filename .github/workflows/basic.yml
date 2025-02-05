@@ -8,9 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - name: Step one
-      uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: Step two
-      run: ls -la
+        run: ls -la
       - run: pwd
 
   job2:
@@ -18,6 +18,6 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Step one of job2
-    uses: actions/checkout@v4
-    name: Step two of job2
-    run: pwd
+      uses: actions/checkout@v4
+    - name: Step two of job2
+      run: pwd
